@@ -27,10 +27,10 @@ const factsArray = [
   const handleFactClick = (e) => {
     const fact = factsArray[random()];
     factsElement.innerHTML = "";
-    const factsItem = document.createElement("li"); // <ul>
+    const factsItem = document.createElement("li"); 
     factsItem.classList.add("space-facts__item", "space-facts__border");
   
-    const factsFact = document.createElement("h2"); // <h2>
+    const factsFact = document.createElement("h2"); 
     factsFact.classList.add("space-facts__fact");
     factsFact.innerText = fact.fact;
   
@@ -38,9 +38,9 @@ const factsArray = [
     factsImage.classList.add("space-facts__image");
     factsImage.src = fact.image;
   
-    factsItem.appendChild(factsImage); // append <h3> to the <li>
-    factsItem.appendChild(factsFact); // append <> to the <li>
-    factsElement.appendChild(factsItem); // append the <li> to the <div>
+    factsItem.appendChild(factsImage); 
+    factsItem.appendChild(factsFact); 
+    factsElement.appendChild(factsItem); 
   };
   
   const button = document.querySelector(".space-facts__button");
@@ -48,10 +48,10 @@ const factsArray = [
   
   const renderFact = () => {
     const fact = factsArray[random()];
-    const factsItem = document.createElement("li"); // <ul>
+    const factsItem = document.createElement("li"); 
     factsItem.classList.add("space-facts__item", "space-facts__border");
   
-    const factsFact = document.createElement("h2"); // <h2>
+    const factsFact = document.createElement("h2"); 
     factsFact.classList.add("space-facts__fact");
     factsFact.innerText = fact.fact;
   
@@ -59,9 +59,9 @@ const factsArray = [
     factsImage.classList.add("space-facts__image");
     factsImage.src = fact.image;
   
-    factsItem.appendChild(factsImage); // append <h3> to the <li>
-    factsItem.appendChild(factsFact); // append <> to the <li>
-    factsElement.appendChild(factsItem); // append the <li> to the <div>
+    factsItem.appendChild(factsImage);
+    factsItem.appendChild(factsFact); 
+    factsElement.appendChild(factsItem); 
   };
   
   renderFact();
